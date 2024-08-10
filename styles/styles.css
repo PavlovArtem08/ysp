@@ -1,0 +1,29 @@
+/* специфичность = 1 */
+p {
+    /* color: blue;
+            color: rgb(50, 15, 255, );
+            color: rgba(50, 15, 255, 0.05); */
+
+        /*  A = 10
+            B = 11
+            C = 12
+            D = 13
+            E = 14
+            F = 15 */
+    color: #0000FF;
+    font-size: 18px;
+}
+
+/* специфичность = 10 */
+.text {
+    color: green;
+}
+
+.text2 {
+    color: purple;
+}
+
+/* специфичность = 100 */
+#text {
+    color: red;
+}
