@@ -1,20 +1,17 @@
-/* специфичность = 1 */
 p {
-    /* color: blue;
-            color: rgb(50, 15, 255, );
-            color: rgba(50, 15, 255, 0.05); */
+    color: blue;
+    /* color: rgb(50, 15, 255, );
+    color: rgba(50, 15, 255, 0.05); */
 
     /*  A = 10
-            B = 11
-            C = 12
-            D = 13
-            E = 14
-            F = 15 */
+        B = 11
+        C = 12
+        D = 13
+        E = 14
+        F = 15 */
     /* color: blue; /* цвет текста */
     /*font-size: 32px; */
 }
-
-/* специфичность = 10 */
 
 .article {
     font-size: 17px;
