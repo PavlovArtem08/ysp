@@ -4,26 +4,94 @@ p {
             color: rgb(50, 15, 255, );
             color: rgba(50, 15, 255, 0.05); */
 
-        /*  A = 10
+    /*  A = 10
             B = 11
             C = 12
             D = 13
             E = 14
             F = 15 */
-    color: #0000FF;
-    font-size: 18px;
+    /* color: blue; /* цвет текста */
+    /*font-size: 32px; */
 }
 
 /* специфичность = 10 */
-.text {
-    color: green;
+
+.article {
+    font-size: 17px;
+    background-color: #333333;
+    color: white;
+    /* отступ с 4 сторон сразу */
+    padding: 100px;
+    /* верх, право, вниз, лево */
+    padding: 30px 60px 90px 120px;
+    /* вертикаль, горизонталь */
+    padding: 30px 60px;
+    /* верх, горизонталь, вниз */
+    padding: 10px 20px 30px;
+
+    border: 5px solid green;
+    /* border-left: 30px dotted red;
+    border-bottom-color: yellow; */
+
+    margin: 10px;
+
+    width: 500px;
+    height: 700px;
+
 }
 
-.text2 {
+.article-text {
+    /* цвет заливки */
+    background-color: #333333;
+    color: green;
+    /*межстрочный интервал */
+    line-height: 1.6;
+    /* font-size: 22px; */
+    /* жирность текста */
+    font-weight: normal;
+    /* курсивность текста */
+    font-style: italic;
+    /* семейство шрифтов */
+    font-family: 'Times New Roman', 'Arial', 'Robot', sans-serif;
+    text-align: justify;
+    text-transform: uppercase;
+    border: unset;
+
+    /* text-decoration-line: underline;
+    text-decoration-color: aqua;
+    text-decoration-style:wavy ; */
+}
+
+/* .text2 {
     color: purple;
 }
 
 /* специфичность = 100 */
-#text {
+/* #text {
     color: red;
+} */
+
+.link {
+    /* font-size: initial; */
+    color: inherit;
+    background-color: #21ae21;
+    /* font-size: 30px; */
+    text-decoration: none;
+}
+
+.article-heading {
+    /* выравнивание текста */
+    text-align: center;
+
+}
+
+.span {
+    font-size: 40px;
+    border: 5px solid red;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 700px;
+    display: inline-block;
 }
