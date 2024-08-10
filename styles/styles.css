@@ -34,10 +34,8 @@ p {
     border-bottom-color: yellow; */
 
     margin: 10px;
-
     width: 500px;
     height: 700px;
-
 }
 
 .article-text {
@@ -56,7 +54,6 @@ p {
     text-align: justify;
     text-transform: uppercase;
     border: unset;
-
     /* text-decoration-line: underline;
     text-decoration-color: aqua;
     text-decoration-style:wavy ; */
@@ -82,7 +79,6 @@ p {
 .article-heading {
     /* выравнивание текста */
     text-align: center;
-
 }
 
 .span {
