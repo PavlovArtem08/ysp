@@ -8,26 +8,28 @@ html {
     font-family: 'Robot';
 }
 
-p {
+/* p {
     color: blue;
-    /* color: rgb(50, 15, 255, );
-    color: rgba(50, 15, 255, 0.05); */
+    color: rgb(50, 15, 255, );
+    color: rgba(50, 15, 255, 0.05);
 
-    /*  A = 10
+     A = 10
         B = 11
         C = 12
         D = 13
         E = 14
-        F = 15 */
-    /* color: blue; /* цвет текста */
-    /*font-size: 32px; */
-}
+        F = 15
+    color: blue; /* цвет текста
+    font-size: 32px;
+} */
 
 .article {
     display: inline-block;
-    width: 500px;
-    height: 700px;
-
+    /* width: 500px;
+    height: 700px; */
+    min-width: 300px;
+    max-width: 500px;
+    width: 1000px;
     /* отступ с 4 сторон сразу */
     /* padding: 30px; */
     /* верх, право, вниз, лево */
@@ -94,7 +96,7 @@ p {
 }
 
 .span {
-    display: inline-block;
+    /* display: inline-block; */
     width: 300px;
     height: 700px;
     padding: 20px;
