@@ -8,6 +8,10 @@ html {
     font-family: 'Robot';
 }
 
+main {
+    font-size: 0;
+}
+
 /* p {
     color: blue;
     color: rgb(50, 15, 255, );
@@ -29,37 +33,30 @@ html {
     height: 700px; */
     min-width: 300px;
     max-width: 500px;
-    width: 1000px;
+    width: 50%;
+
+    /* верх, горизонталь, вниз */
+    padding: 30px;
+    border: 20px solid green;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    /* цвет заливки */
+    background-color: #333333;
+    color: white;
     /* отступ с 4 сторон сразу */
     /* padding: 30px; */
     /* верх, право, вниз, лево */
     /* padding: 30px 60px 90px 120px; */
     /* вертикаль, горизонталь */
     /* padding: 30px 60px; */
-
-    /* верх, горизонталь, вниз */
-    padding: 30px;
-    border: 20px solid green;
     /* border-left: 30px dotted red;
     border-bottom-color: yellow; */
-    margin: 0 0 10px 0;
-    font-size: 20px;
-
-    /* цвет заливки */
-    background-color: #333333;
-    color: white;
-
 }
 
 .article-text {
-    /* цвет заливки */
-    background-color: #333333;
-    color: green;
     /*межстрочный интервал */
     line-height: 1.6;
-    /* font-size: 22px; */
-    /* жирность текста */
-    /* font-weight: normal; */
+    /* font-size: 30px; */
     /* курсивность текста */
     font-style: italic;
     /* семейство шрифтов */
@@ -68,6 +65,9 @@ html {
     text-transform: uppercase;
     font: italic bold 30px 1.6 'Times New Roman';
     border: unset;
+    /* font-size: 22px; */
+    /* жирность текста */
+    /* font-weight: normal; */
     /* text-decoration-line: underline;
     text-decoration-color: aqua;
     text-decoration-style:wavy ; */
@@ -85,7 +85,6 @@ html {
 .link {
     /* font-size: initial; */
     color: inherit;
-    background-color: #21ae21;
     /* font-size: 30px; */
     text-decoration: none;
 }
@@ -93,15 +92,4 @@ html {
 .article-heading {
     /* выравнивание текста */
     text-align: center;
-}
-
-.span {
-    /* display: inline-block; */
-    width: 300px;
-    height: 700px;
-    padding: 20px;
-    border: 5px solid red;
-    margin: 20px;
-    font-size: 40px;
-    background-color: lightgray;
 }
