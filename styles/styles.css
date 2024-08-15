@@ -4,13 +4,13 @@
     padding: 0; */
 }
 
-html {
+/* html {
     font-family: 'Robot';
-}
+} */
 
-main {
+/* main {
     font-size: 0;
-}
+} */
 
 /* p {
     color: blue;
@@ -27,51 +27,51 @@ main {
     font-size: 32px;
 } */
 
-.article {
+/* .article {
     display: inline-block;
-    /* width: 500px;
-    height: 700px; */
+    width: 500px;
+    height: 700px;
     min-width: 300px;
     max-width: 500px;
-    width: 50%;
+    width: 50%; */
 
-    /* верх, горизонталь, вниз */
-    padding: 30px;
+/* верх, горизонталь, вниз */
+/* padding: 30px;
     border: 20px solid green;
     margin: 0 0 10px 0;
-    font-size: 30px;
-    /* цвет заливки */
-    background-color: #333333;
-    color: white;
-    /* отступ с 4 сторон сразу */
-    /* padding: 30px; */
-    /* верх, право, вниз, лево */
-    /* padding: 30px 60px 90px 120px; */
-    /* вертикаль, горизонталь */
-    /* padding: 30px 60px; */
-    /* border-left: 30px dotted red;
+    font-size: 30px; */
+/* цвет заливки */
+/* background-color: #333333;
+    color: white; */
+/* отступ с 4 сторон сразу */
+/* padding: 30px; */
+/* верх, право, вниз, лево */
+/* padding: 30px 60px 90px 120px; */
+/* вертикаль, горизонталь */
+/* padding: 30px 60px; */
+/* border-left: 30px dotted red;
     border-bottom-color: yellow; */
-}
+/* } */
 
-.article-text {
-    /*межстрочный интервал */
-    line-height: 1.6;
-    /* font-size: 30px; */
-    /* курсивность текста */
-    font-style: italic;
-    /* семейство шрифтов */
-    font-family: 'Times New Roman', 'Arial', 'Robot', sans-serif;
+/* .article-text { */
+/*межстрочный интервал */
+/* line-height: 1.6; */
+/* font-size: 30px; */
+/* курсивность текста */
+/* font-style: italic; */
+/* семейство шрифтов */
+/* font-family: 'Times New Roman', 'Arial', 'Robot', sans-serif;
     text-align: justify;
     text-transform: uppercase;
     font: italic bold 30px 1.6 'Times New Roman';
-    border: unset;
-    /* font-size: 22px; */
-    /* жирность текста */
-    /* font-weight: normal; */
-    /* text-decoration-line: underline;
+    border: unset; */
+/* font-size: 22px; */
+/* жирность текста */
+/* font-weight: normal; */
+/* text-decoration-line: underline;
     text-decoration-color: aqua;
     text-decoration-style:wavy ; */
-}
+/* } */
 
 /* .text2 {
     color: purple;
@@ -82,26 +82,26 @@ main {
     color: red;
 } */
 
-.link {
-    /* font-size: initial; */
-    color: inherit;
-    /* font-size: 30px; */
-    text-decoration: none;
-}
+/* .link { */
+/* font-size: initial; */
+/* color: inherit; */
+/* font-size: 30px; */
+/* text-decoration: none; */
+/* } */
 
-.article-heading {
-    /* выравнивание текста */
-    text-align: center;
-}
+/* .article-heading { */
+/* выравнивание текста */
+/* text-align: center;
+} */
 
-div {
+/* div {
     width: 400px;
     padding: 20px;
     color: black;
     border: 5px solid red;
-    font-size: 20px;
-    /* text-align: center; */
-}
+    font-size: 20px; */
+/* text-align: center; */
+/* } */
 
 /* .class-1 {
     margin: 0 auto;
@@ -127,8 +127,42 @@ div {
     object-position: 60% 25%;
 }
 
-.wide-img {}
-
 .tall-img {
     object-position: 60% 25%;
+}
+
+.smoker-img {
+    height: 400px;
+    width: 400px;
+    /* background-color: red; */
+    background-image: url('../img/medved.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0;
+    border-radius: 50%;
+
+
+}
+
+.outer {
+    background-color: lightblue;
+    font-size: 30px;
+    border: 10px solid red;
+    padding: 20px;
+    height: 400px;
+    overflow: auto;
+}
+
+.inner {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: green;
+}
+
+button {
+    max-width: 200px;
+    max-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
