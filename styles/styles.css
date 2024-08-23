@@ -134,8 +134,8 @@
 /* .smoker-img {
     height: 400px;
     width: 400px; */
-    /* background-color: red; */
-    /* background-image: url('../img/medved.jpg');
+/* background-color: red; */
+/* background-image: url('../img/medved.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 0;
@@ -200,5 +200,6 @@ body {
 }
 
 .white {
-    background-color: transparent;
+    opacity: 0;
+    /* background-color: transparent; */
 }
