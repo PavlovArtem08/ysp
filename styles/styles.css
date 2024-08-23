@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* html {
     font-family: 'Robot';
@@ -119,38 +119,38 @@
     margin: 30px auto;
 } */
 
-.img {
+/* .img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 60% 25%;
-}
+} */
 
-.tall-img {
+/* .tall-img {
     object-position: 60% 25%;
-}
+} */
 
-.smoker-img {
+/* .smoker-img {
     height: 400px;
-    width: 400px;
+    width: 400px; */
     /* background-color: red; */
-    background-image: url('../img/medved.jpg');
+    /* background-image: url('../img/medved.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 0;
     border-radius: 50%;
-}
+} */
 
-.outer {
+/* .outer {
     background-color: lightblue;
     font-size: 30px;
     border: 10px solid red;
     width: 50vw;
     height: 50vh;
-}
+} */
 
-div {
+/* div {
     border: 10px solid;
     padding: 20px;
 }
@@ -170,4 +170,35 @@ div {
 .hidden-4 {
     height: 0;
     overflow: hidden;
+} */
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.chessboard {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    overflow: hidden;
+    /* Виправляє проблему з float-елементами */
+}
+
+.chessboard .square {
+    width: 50px;
+    height: 50px;
+    float: left;
+    /* Використовуємо float для розташування елементів у рядок */
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: transparent;
 }
