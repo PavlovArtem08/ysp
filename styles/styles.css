@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* 
     vh - viewport height
@@ -12,8 +12,15 @@
     1vmax - 1 % от максимальной  стороны вьюпорта
  */
 
-div {
-    width: 100vmin;
-    height: 100vmax;
-    border: 10px solid;
+ul {
+    /* 
+    list-style 
+    list-style-type
+
+    list-style-position
+
+    list-style-image
+    */
+    /* list-style: '\00AE' inside url(''); */
+    list-style: none;
 }
