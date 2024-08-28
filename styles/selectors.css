@@ -1,0 +1,19 @@
+[title] {
+    color: red;
+}
+[href="https:/google.com"] {
+    background-color: lightskyblue;
+    color: black;
+}
+
+[title*="test"] {
+    color: purple;
+}
+
+[title^="start"] {
+background-color: blue;
+}
+
+[title$="end"] {
+background-color: limegreen;
+}
