@@ -1,6 +1,7 @@
 [title] {
     color: red;
 }
+
 [href="https:/google.com"] {
     background-color: lightskyblue;
     color: black;
@@ -11,9 +12,33 @@
 }
 
 [title^="start"] {
-background-color: blue;
+    background-color: blue;
 }
 
 [title$="end"] {
-background-color: limegreen;
+    background-color: limegreen;
+}
+
+a[href="https:/google.com"][title]#first.class1.class2 {
+    background-color: rgb(13, 148, 38);
+    color: white;
+}
+
+div p {
+    color: chartreuse;
+}
+
+div>p,
+div>p>a {
+    font-size: 25px;
+    color: yellow;
+}
+
+p~p {
+    font-weight: bold;
+}
+
+p+p,
+.article > .text + .text {
+    font-style: italic;
 }
