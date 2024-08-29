@@ -39,6 +39,6 @@ p~p {
 }
 
 p+p,
-.article > .text + .text {
+.article>.text+.text {
     font-style: italic;
 }
