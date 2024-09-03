@@ -1,0 +1,13 @@
+:root {
+    --text-color: black;
+    --font-size: 16px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+span {
+    color: var(--text-color);
+}
+
