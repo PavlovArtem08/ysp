@@ -27,3 +27,35 @@ body :not(.simple, span, ) {
 .btn:active {
     color: red;
 }
+
+.btn:focus {
+    border-color: red;
+    outline: none;
+}
+
+.interactive-section:focus {
+    border-color: aqua;
+}
+
+.interactive-section p:first-child {
+    color: red;
+}
+
+/* .interactive-section p:nth-child(2n) {
+color: greenyellow;
+} */
+/* .interactive-section p:nth-child(2n + 1) {
+    color: tomato;
+} */
+
+.interactive-section p:nth-child(even) {
+    color: tomato;
+}
+
+.interactive-section p:nth-child(odd) {
+    color: rgb(99, 255, 71);
+}
+
+.interactive-section p:last-child {
+    color: purple;
+}
