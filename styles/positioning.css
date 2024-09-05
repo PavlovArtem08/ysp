@@ -1,55 +1,63 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-main {
-    width: 500px;
-    height: 300vh;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
-
-section {
-    width: 400px;
-    height: 100vh;
-    margin: 0 auto;
-    text-align: center;
-    background-color: coral;
-}
-
-.box {
-    --size: 80px;
+th,
+td {
     padding: 10px;
-    border: 2px solid black;
-    width: var(--size);
-    height: var(--size);
+    text-align: center;
+    border: 1px solid #000;
 }
 
-.block-pos-fixed {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    position: fixed;
+/* Стили для четных рядов */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-/* Блок в верхнем левом углу */
-.top-left {
-    top: 0;
-    left: 0;
+/* Стили для нечетных рядов */
+tr:nth-child(odd) {
+    background-color: #e0e0e0;
 }
 
-/* Блок в правом нижнем углу */
-.bottom-right {
-    bottom: 0;
-    right: 0;
+/* Первый ряд (заголовок таблицы) */
+tr:first-child {
+    background-color: #4CAF50;
+    color: white;
 }
 
-/* Блок в центре */
-.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Последний ряд */
+tr:last-child {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Каждый пятый ряд */
+tr:nth-child(5n) {
+    background-color: #ffeb3b;
+}
+
+/* Последняя ячейка в каждом ряду */
+td:last-of-type {
+    font-weight: bold;
+    background-color: #673ab7;
+    color: white;
+}
+
+/* Первая ячейка в каждом ряду */
+td:first-of-type {
+    font-style: italic;
+    background-color: #3f51b5;
+    color: white;
+}
+
+/* Стили для всех ячеек в рядах, кратных 3 */
+tr:nth-child(3n) td {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* Последние три ряда */
+tr:nth-last-child(-n+3) {
+    background-color: #ff9800;
 }
