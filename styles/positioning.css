@@ -16,6 +16,7 @@ section {
     width: 400px;
     height: 100vh;
     margin: 0 auto;
+    text-align: center;
     background-color: coral;
 }
 
@@ -27,59 +28,28 @@ section {
     height: var(--size);
 }
 
-.pos-static {
-    position: static;
-}
-
-.pos-relative {
-    position: relative;
-    background-color: yellow;
-    top: -10px;
-    left: var(--size);
-}
-
-.pos-relative-container,
-.pos-relative-container-2 {
-    position: relative;
-}
-
-.pos-absolute {
-    position: absolute;
-    background-color: blue;
-}
-
-.pos-fixed {
-    /* width: initial;
-    height: initial; */
+.block-pos-fixed {
+    width: 50px;
+    height: 50px;
+    background-color: green;
     position: fixed;
-    background-color: limegreen;
-    /* left: 50%;
-    transform: translateX(-50%); */
-    left: 0;
-    right: 0;
+}
+
+/* Блок в верхнем левом углу */
+.top-left {
     top: 0;
-    /* bottom: 0; */
+    left: 0;
 }
 
-.pos-sticky {
-    position: sticky;
-    top: 40px;
-    left: 30%;
-}
-
-.pos-1 {
-    bottom: -100px;
+/* Блок в правом нижнем углу */
+.bottom-right {
+    bottom: 0;
     right: 0;
-    z-index: 10;
 }
 
-.pos-2 {
-    bottom: -80px;
-    right: 10px;
-    z-index: 11;
-}
-
-.pos-3 {
-    right: 30px;
-    bottom: -120px;
+/* Блок в центре */
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
