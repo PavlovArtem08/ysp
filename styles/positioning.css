@@ -1,63 +1,96 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-th,
-td {
-    padding: 10px;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --box-bg-color: darkgoldenrod;
+    --box-padding: 20px;
+}
+
+main {
+    width: 500px;
+    height: 300vh;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+section {
+    width: 400px;
+    height: 100vh;
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid #000;
+    background-color: coral;
 }
 
-/* Стили для четных рядов */
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+
+.block-pos-fixed {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    background-color: limegreen;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    left: 0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
 }
 
-/* Стили для нечетных рядов */
-tr:nth-child(odd) {
-    background-color: #e0e0e0;
+.bottom-left {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: var(--box-padding);
+    background-color: var(--box-bg-color);
 }
 
-/* Первый ряд (заголовок таблицы) */
-tr:first-child {
-    background-color: #4CAF50;
-    color: white;
+.bottom-right {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: var(--box-padding);
+    background-color: var(--box-bg-color);
 }
 
-/* Последний ряд */
-tr:last-child {
-    background-color: #ff5722;
-    color: white;
+.top-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: var(--box-padding);
+    background-color: var(--box-bg-color);
 }
 
-/* Каждый пятый ряд */
-tr:nth-child(5n) {
-    background-color: #ffeb3b;
+.top-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: var(--box-padding);
 }
 
-/* Последняя ячейка в каждом ряду */
-td:last-of-type {
-    font-weight: bold;
-    background-color: #673ab7;
-    color: white;
+.position-fixed {
+    position: fixed;
 }
 
-/* Первая ячейка в каждом ряду */
-td:first-of-type {
-    font-style: italic;
-    background-color: #3f51b5;
-    color: white;
+.bg-color {
+    background-color: var(--box-bg-color);
 }
 
-/* Стили для всех ячеек в рядах, кратных 3 */
-tr:nth-child(3n) td {
-    background-color: #9c27b0;
-    color: white;
+.padding-20px {
+    padding: 20px;
 }
 
-/* Последние три ряда */
-tr:nth-last-child(-n+3) {
-    background-color: #ff9800;
+.top-10px {
+    top: 10px;
+}
+
+.right-10px {
+    right: 10px;
 }
