@@ -45,27 +45,18 @@ section {
 }
 
 .bottom-left {
-    position: fixed;
     bottom: 10px;
     left: 10px;
-    padding: var(--box-padding);
-    background-color: var(--box-bg-color);
 }
 
 .bottom-right {
-    position: fixed;
     bottom: 10px;
     right: 10px;
-    padding: var(--box-padding);
-    background-color: var(--box-bg-color);
 }
 
 .top-left {
-    position: fixed;
     top: 10px;
     left: 10px;
-    padding: var(--box-padding);
-    background-color: var(--box-bg-color);
 }
 
 .top-right {
@@ -73,6 +64,14 @@ section {
     top: 10px;
     right: 10px;
     padding: var(--box-padding);
+}
+
+.top-left,
+.bottom-right,
+.bottom-left {
+    position: fixed;
+    padding: var(--box-padding);
+    background-color: var(--box-bg-color);
 }
 
 .position-fixed {
