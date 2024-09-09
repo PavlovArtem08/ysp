@@ -15,49 +15,43 @@ a {
     text-align: center;
 }
 
-/* применяет стили к первой букве первой строки */
-.stylized,
-.text::first-letter {
-    font-size: 80px;
-    color: red;
-    font-style: italic;
-    font-family: Arial;
-    text-transform: capitalize;
-}
 
-/*  применяет стили к первой строке */
-.text::first-line {
-    background-color: yellow;
-}
 
-/* позволяет применить стили к части документа,
-который был выделен пользователем */
-.text::selection {
-    background-color: hotpink;
-    color: wheat;
-}
-
-/* представляет собой текст placeholder */
-input::placeholder {
-    color: blue;
-    font-style: italic;
-    font-weight: bold;
+.text {
+    margin: 20px;
+    position: relative;
 }
 
 /* создаёт псевдоэлемент,
 который является первым потомком выбранного элемента. */
 .text::before {
-    content: open-quote;
     background-color: limegreen;
-    font-size: 30px;
+    /* font-size: 30px; */
     display: inline-block;
+    position: absolute;
+    top: 5px;
+}
+
+.text::before {
+    content: open-quote;
+    right: 100%;
 }
 
 /* создаёт псевдоэлемент,
 который является последним потомком выбранного элемента. */
 .text::after {
-    content: close-quote;
     background-color: limegreen;
-    font-size: 30px;
+    /* font-size: 30px; */
+    position: absolute;
     display: inline-block;
+    top: 5px;
+}
+
+.text::after {
+    content: close-quote;
+    left: 100%;
+}
+
+.absolute {
+    /* position: absolute; */
 }
