@@ -1,57 +1,70 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.main {
+    min-height: 200vh;
+    margin-top: 60px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.nav {
+    position: fixed;
+    top: 0;
+    background-color: teal;
+    padding: 10px;
+    width: 100%;
 }
 
-.main-haeding {
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-}
-
-
-
-.text {
-    margin: 20px;
-    position: relative;
-}
-
-/* создаёт псевдоэлемент,
-который является первым потомком выбранного элемента. */
-.text::before {
-    background-color: limegreen;
-    /* font-size: 30px; */
+.nav-list-item {
     display: inline-block;
-    position: absolute;
-    top: 5px;
 }
 
-.text::before {
-    content: open-quote;
-    right: 100%;
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: white;
+    /* transition-property: background-color, color, padding;
+    transition-duration: 0.2s, 1.5s;
+    transition-delay: 0s; */
+
+    /* property duration timing-func delay */
+    transition: background-color 0.5s ease 0s, color 1.5s ease-out 0s;
 }
 
-/* создаёт псевдоэлемент,
-который является последним потомком выбранного элемента. */
-.text::after {
-    background-color: limegreen;
-    /* font-size: 30px; */
-    position: absolute;
-    display: inline-block;
-    top: 5px;
+.nav-link:hover {
+    background-color: aqua;
+    color: red;
 }
 
-.text::after {
-    content: close-quote;
-    left: 100%;
+.animated {
+    width: 200px;
+    color: white;
+    background: black;
+    font-size: 30px;
+    padding: 10px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-delay: 0s;
 }
 
-.absolute {
-    /* position: absolute; */
+.wrapper:hover>.animated {
+    width: 800px;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
 }
