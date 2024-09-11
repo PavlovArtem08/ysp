@@ -20,7 +20,7 @@
     position: relative;
     padding: 10px 20px;
     border: 2px solid;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: white;
     /* transition-property: background-color, color, padding;
     transition-duration: 0.2s, 1.5s;
@@ -34,8 +34,8 @@
     content: '';
     position: absolute;
     width: 0%;
-    top: 25px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     height: 3px;
     background-color: red;
 
@@ -43,15 +43,15 @@
 }
 
 .nav-link:hover::before {
-    width: 50%;
+    width: 100%;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
     width: 0%;
-    top: 8px;
-    right: 20px;
+    bottom: 0px;
+    right: 0px;
     height: 3px;
     background-color: red;
 
@@ -59,7 +59,7 @@
 }
 
 .nav-link:hover::after {
-    width: 60%;
+    width: 100%;
 }
 
 .nav-link:hover {
@@ -78,7 +78,7 @@
     transition-delay: 0s;
 }
 
-.wrapper:hover>.animated {
+.wrapper:hover > .animated {
     width: 800px;
 }
 
