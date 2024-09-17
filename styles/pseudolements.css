@@ -78,7 +78,7 @@
     transition-delay: 0s;
 }
 
-.wrapper:hover > .animated {
+.wrapper:hover>.animated {
     width: 800px;
 }
 
