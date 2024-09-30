@@ -10,7 +10,6 @@
 }
 
 .item {
-    margin: auto;
     padding: 20px;
     border: 5px solid red;
     background-color: darkgreen;
@@ -21,4 +20,8 @@
 
 .order {
     order: -1;
+}
+
+.align-self {
+    align-self: flex-start;
 }
