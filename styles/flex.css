@@ -10,7 +10,7 @@
 }
 
 .item {
-    margin: 10px;
+    margin: auto;
     padding: 20px;
     border: 5px solid red;
     background-color: darkgreen;
@@ -19,6 +19,6 @@
     text-align: center;
 }
 
-.m-left {
-    margin-left: auto;
+.order {
+    order: -1;
 }
